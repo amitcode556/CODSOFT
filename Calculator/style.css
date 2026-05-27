@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e8e8e8;
+}
+
+.calculator {
+  background-color: #2c2c2c;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 320px;
+  width: 100%;
+}
+
+.display {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.previous-operand {
+  color: #999;
+  font-size: 1rem;
+  min-height: 24px;
+  word-break: break-all;
+  text-align: right;
+}
+
+.current-operand {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  word-break: break-all;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 18px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.digit {
+  background-color: #505050;
+  color: #ffffff;
+}
+
+.digit:hover {
+  background-color: #606060;
+}
+
+.operator {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+.operator:hover {
+  background-color: #45a049;
+}
+
+.clear {
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+
+.clear:hover {
+  background-color: #b71c1c;
+}
+
+.backspace {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+.backspace:hover {
+  background-color: #f57c00;
+}
+
+.decimal {
+  background-color: #505050;
+  color: #ffffff;
+}
+
+.decimal:hover {
+  background-color: #606060;
+}
+
+.equals {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+
+.equals:hover {
+  background-color: #1b5e20;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.error {
+  color: #ff5252 !important;
+}
+
+@media (max-width: 360px) {
+  .calculator {
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px;
+  }
+
+  .display {
+    padding: 15px;
+    min-height: 80px;
+  }
+
+  .current-operand {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 14px;
+    font-size: 1.3rem;
+  }
+}
