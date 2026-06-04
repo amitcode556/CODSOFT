@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexaStudio — Creative Digital Agency</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- ============================================================
+         HEADER — Logo + Navigation
+    ============================================================ -->
+    <header class="header" id="home">
+      <div class="container header__inner">
+
+        <!-- Logo -->
+        <a href="#home" class="logo">
+          <span class="logo__icon">N</span>
+          <span class="logo__text">NexaStudio</span>
+        </a>
+
+        <!-- Primary navigation -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#home"     class="nav__link">Home</a></li>
+            <li><a href="#features" class="nav__link">Features</a></li>
+            <li><a href="#about"    class="nav__link">About</a></li>
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#contact"  class="nav__link">Contact</a></li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </nav>
+
+      </div>
+    </header>
+
+
+    <!-- ============================================================
+         HERO — Headline, description, CTA buttons, stats
+    ============================================================ -->
+    <section class="hero">
+      <div class="container hero__inner">
+
+        <!-- Left: text content -->
+        <div class="hero__content">
+          <span class="badge">Trusted by 500+ companies</span>
+          <h1 class="hero__title">
+            We Build Digital<br />
+            <span class="highlight">Experiences</span> That Matter
+          </h1>
+          <p class="hero__desc">
+            NexaStudio crafts stunning websites, bold brands, and powerful
+            digital strategies that help businesses grow and stand out in a
+            competitive world.
+          </p>
+          <div class="hero__actions">
+            <a href="#services" class="btn btn--primary">Explore Our Work</a>
+            <a href="#about"    class="btn btn--ghost">Learn More</a>
+          </div>
+
+          <!-- Quick stats row -->
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__number">500+</span>
+              <span class="stat__label">Projects Done</span>
+            </div>
+            <div class="stat__divider"></div>
+            <div class="stat">
+              <span class="stat__number">98%</span>
+              <span class="stat__label">Happy Clients</span>
+            </div>
+            <div class="stat__divider"></div>
+            <div class="stat">
+              <span class="stat__number">12+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: hero image with floating cards -->
+        <div class="hero__image-wrap">
+          <img
+            src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Team collaborating on a project"
+            class="hero__image"
+          />
+          <!-- Floating badge: top-right -->
+          <div class="hero__card hero__card--top">
+            <span class="hero__card-icon">&#9733;</span>
+            <div>
+              <strong>Award Winning</strong>
+              <small>Best Agency 2024</small>
+            </div>
+          </div>
+          <!-- Floating badge: bottom-left -->
+          <div class="hero__card hero__card--bottom">
+            <span class="hero__card-icon">&#10003;</span>
+            <div>
+              <strong>Project Delivered</strong>
+              <small>On time, every time</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         FEATURES — 3 feature cards
+    ============================================================ -->
+    <section class="features section" id="features">
+      <div class="container">
+
+        <!-- Section heading -->
+        <div class="section-header">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title">What Sets Us Apart</h2>
+          <p class="section-sub">
+            We combine creativity with technology to deliver results that exceed
+            expectations every single time.
+          </p>
+        </div>
+
+        <!-- Cards grid -->
+        <div class="features__grid">
+
+          <!-- Feature 1: Speed -->
+          <div class="feature-card">
+            <div class="feature-card__icon feature-card__icon--blue">
+              <!-- Lightning bolt SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Lightning Fast</h3>
+            <p class="feature-card__desc">
+              Our solutions are optimised for speed and performance. We build
+              websites that load fast, rank well, and convert visitors into
+              customers.
+            </p>
+            <a href="#services" class="feature-card__link">Learn more &rarr;</a>
+          </div>
+
+          <!-- Feature 2: Security (accent/dark card) -->
+          <div class="feature-card feature-card--accent">
+            <div class="feature-card__icon feature-card__icon--white">
+              <!-- Shield check SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Secure by Design</h3>
+            <p class="feature-card__desc">
+              Security is built into every layer. From secure coding practices
+              to regular audits, we ensure your digital assets are fully
+              protected.
+            </p>
+            <a href="#services" class="feature-card__link feature-card__link--white">Learn more &rarr;</a>
+          </div>
+
+          <!-- Feature 3: Growth -->
+          <div class="feature-card">
+            <div class="feature-card__icon feature-card__icon--teal">
+              <!-- Trending up SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Growth Focused</h3>
+            <p class="feature-card__desc">
+              Every decision we make is aimed at growing your business. We
+              combine data-driven strategies with creative execution to maximise
+              your ROI.
+            </p>
+            <a href="#services" class="feature-card__link">Learn more &rarr;</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section class="about section" id="about">
+      <div class="container about__inner">
+
+        <!-- Left: image with experience badge -->
+        <div class="about__image-wrap">
+          <img
+            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Our team collaborating"
+            class="about__image"
+          />
+          <div class="about__experience-badge">
+            <span class="about__exp-number">12+</span>
+            <span class="about__exp-text">Years of Excellence</span>
+          </div>
+        </div>
+
+        <!-- Right: text content -->
+        <div class="about__content">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title">We Are a Team of Passionate Creators</h2>
+          <p class="about__desc">
+            Founded in 2012, NexaStudio has grown from a two-person startup into
+            a full-service digital agency with a team of 60+ designers,
+            developers, and strategists. We are passionate about crafting
+            memorable digital experiences.
+          </p>
+          <p class="about__desc">
+            Our multidisciplinary approach means we handle everything — from
+            initial strategy and UX research through to pixel-perfect design and
+            robust engineering — under one roof.
+          </p>
+          <!-- Key benefits list -->
+          <ul class="about__list">
+            <li class="about__list-item">
+              <span class="about__check">&#10003;</span>
+              Client-centred creative process
+            </li>
+            <li class="about__list-item">
+              <span class="about__check">&#10003;</span>
+              Transparent communication &amp; reporting
+            </li>
+            <li class="about__list-item">
+              <span class="about__check">&#10003;</span>
+              On-time, on-budget delivery
+            </li>
+            <li class="about__list-item">
+              <span class="about__check">&#10003;</span>
+              Post-launch support &amp; maintenance
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Work With Us</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SERVICES — 6 service cards
+    ============================================================ -->
+    <section class="services section" id="services">
+      <div class="container">
+
+        <!-- Section heading -->
+        <div class="section-header">
+          <span class="section-tag">What We Do</span>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-sub">
+            From concept to launch, we provide end-to-end digital services
+            tailored to your unique business goals.
+          </p>
+        </div>
+
+        <!-- Services grid -->
+        <div class="services__grid">
+
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-card__img-wrap">
+              <img
+                src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Web Design and Development"
+                class="service-card__img"
+              />
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__tag">Design</span>
+              <h3 class="service-card__title">Web Design &amp; Development</h3>
+              <p class="service-card__desc">
+                Stunning, responsive websites built with modern technologies
+                that engage visitors and drive conversions.
+              </p>
+              <a href="#contact" class="service-card__link">Get a Quote &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-card__img-wrap">
+              <img
+                src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Digital Marketing and SEO"
+                class="service-card__img"
+              />
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__tag">Marketing</span>
+              <h3 class="service-card__title">Digital Marketing &amp; SEO</h3>
+              <p class="service-card__desc">
+                Data-driven marketing strategies that increase visibility,
+                attract targeted traffic, and grow revenue.
+              </p>
+              <a href="#contact" class="service-card__link">Get a Quote &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-card__img-wrap">
+              <img
+                src="https://images.pexels.com/photos/3094224/pexels-photo-3094224.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Brand Identity and Strategy"
+                class="service-card__img"
+              />
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__tag">Branding</span>
+              <h3 class="service-card__title">Brand Identity &amp; Strategy</h3>
+              <p class="service-card__desc">
+                Cohesive brand identities — logo, colours, typography, and
+                voice — that resonate with your audience.
+              </p>
+              <a href="#contact" class="service-card__link">Get a Quote &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-card__img-wrap">
+              <img
+                src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Mobile App Development"
+                class="service-card__img"
+              />
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__tag">Development</span>
+              <h3 class="service-card__title">Mobile App Development</h3>
+              <p class="service-card__desc">
+                Native and cross-platform mobile apps designed for seamless
+                user experience on iOS and Android.
+              </p>
+              <a href="#contact" class="service-card__link">Get a Quote &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-card__img-wrap">
+              <img
+                src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Data and Analytics"
+                class="service-card__img"
+              />
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__tag">Analytics</span>
+              <h3 class="service-card__title">Data &amp; Analytics</h3>
+              <p class="service-card__desc">
+                Turn raw data into actionable insights with custom dashboards,
+                reporting, and analytics solutions.
+              </p>
+              <a href="#contact" class="service-card__link">Get a Quote &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-card__img-wrap">
+              <img
+                src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Cloud and DevOps"
+                class="service-card__img"
+              />
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__tag">Cloud</span>
+              <h3 class="service-card__title">Cloud &amp; DevOps</h3>
+              <p class="service-card__desc">
+                Scalable cloud infrastructure and CI/CD pipelines that keep
+                your applications fast, reliable, and always online.
+              </p>
+              <a href="#contact" class="service-card__link">Get a Quote &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT — Info + Form
+    ============================================================ -->
+    <section class="contact section" id="contact">
+      <div class="container contact__inner">
+
+        <!-- Left: contact information -->
+        <div class="contact__info">
+          <span class="section-tag">Contact Us</span>
+          <h2 class="section-title">Let's Start a Conversation</h2>
+          <p class="contact__desc">
+            Have a project in mind? We would love to hear about it. Fill in the
+            form and our team will be in touch within 24 hours.
+          </p>
+
+          <ul class="contact__details">
+            <!-- Email -->
+            <li class="contact__detail">
+              <span class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </span>
+              <span>hello@nexastudio.com</span>
+            </li>
+            <!-- Phone -->
+            <li class="contact__detail">
+              <span class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.95a16 16 0 0 0 5.89 5.89l1.84-1.84a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </span>
+              <span>+1 (800) 555-0199</span>
+            </li>
+            <!-- Address -->
+            <li class="contact__detail">
+              <span class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </span>
+              <span>350 Fifth Avenue, New York, NY 10118</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: contact form -->
+        <form class="contact__form" action="#" method="post">
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="name">Full Name</label>
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email Address</label>
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="subject">Subject</label>
+            <input
+              class="form__input"
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Project Inquiry"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="message">Message</label>
+            <textarea
+              class="form__input form__textarea"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us about your project..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            Send Message
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         FOOTER — Brand, links, newsletter, copyright
+    ============================================================ -->
+    <footer class="footer">
+      <div class="container">
+
+        <div class="footer__top">
+
+          <!-- Brand + social -->
+          <div class="footer__col footer__col--brand">
+            <a href="#home" class="logo">
+              <span class="logo__icon">N</span>
+              <span class="logo__text logo__text--light">NexaStudio</span>
+            </a>
+            <p class="footer__tagline">
+              Crafting digital experiences that inspire, engage, and convert
+              since 2012.
+            </p>
+            <!-- Social media icon links -->
+            <div class="footer__social">
+              <a href="#" class="social-link" aria-label="Twitter / X">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick links -->
+          <div class="footer__col">
+            <h4 class="footer__heading">Quick Links</h4>
+            <ul class="footer__links">
+              <li><a href="#home"     class="footer__link">Home</a></li>
+              <li><a href="#features" class="footer__link">Features</a></li>
+              <li><a href="#about"    class="footer__link">About</a></li>
+              <li><a href="#services" class="footer__link">Services</a></li>
+              <li><a href="#contact"  class="footer__link">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services links -->
+          <div class="footer__col">
+            <h4 class="footer__heading">Services</h4>
+            <ul class="footer__links">
+              <li><a href="#services" class="footer__link">Web Design</a></li>
+              <li><a href="#services" class="footer__link">Digital Marketing</a></li>
+              <li><a href="#services" class="footer__link">Brand Identity</a></li>
+              <li><a href="#services" class="footer__link">Mobile Apps</a></li>
+              <li><a href="#services" class="footer__link">Cloud &amp; DevOps</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter signup -->
+          <div class="footer__col">
+            <h4 class="footer__heading">Stay Updated</h4>
+            <p class="footer__newsletter-text">
+              Subscribe to our newsletter for the latest news and insights.
+            </p>
+            <form class="footer__newsletter" action="#" method="post">
+              <input
+                type="email"
+                class="footer__email-input"
+                placeholder="Your email address"
+                required
+              />
+              <button type="submit" class="btn btn--primary footer__subscribe-btn">
+                Subscribe
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Bottom bar: copyright + legal -->
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            &copy; 2026 NexaStudio. All rights reserved.
+          </p>
+          <ul class="footer__legal">
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+            <li><a href="#" class="footer__link">Cookie Policy</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
